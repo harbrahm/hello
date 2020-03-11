@@ -12,10 +12,3 @@ jobs:
         run: make
       - name: Nominal Run
         run: ./hello
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1.0.0
-        with: hello
-        # Artifact name
-        name: hello
-        # Directory containing files to upload
-        path: /hello
