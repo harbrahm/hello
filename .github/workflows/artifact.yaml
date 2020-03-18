@@ -1,0 +1,22 @@
+
+name: Github Workflow
+
+on: [push]
+
+jobs:
+  ...
+
+  # deploy new database schema using dacpac
+  build:
+      runs-on: ubuntu-latest
+      steps:
+      # checkout
+      - uses: actions/checkout@v1
+      # download artifact from azure dev ops
+      - name: Download Artifact from Azure Dev Ops
+		uses: manishsat/ado-download-artifact@v3
+		with:
+			# Azure DevOps organization name
+			orgName: GagneetChawla0876
+			# Azure Dev Ops projectId for which the build and artifacts belongs to
+			projectId: demo_tfe
