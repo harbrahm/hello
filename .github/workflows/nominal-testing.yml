@@ -16,3 +16,9 @@ jobs:
         with:
           name: hello-artifact
           path: hello
+		  - uses: manishsat/ado-download-artifact@v3
+		    with:
+	  		  # Azure DevOps organization name
+		    	orgName: GagneetChawla0876
+			    # Azure Dev Ops projectId for which the build and artifacts belongs to
+			    projectId: demo_tfe
