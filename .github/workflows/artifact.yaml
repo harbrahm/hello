@@ -14,9 +14,7 @@ jobs:
       - uses: actions/checkout@v1
       # download artifact from azure dev ops
       - name: Download Artifact from Azure Dev Ops
-		uses: manishsat/ado-download-artifact@v3
-		with:
-			# Azure DevOps organization name
-			orgName: GagneetChawla0876
-			# Azure Dev Ops projectId for which the build and artifacts belongs to
-			projectId: demo_tfe
+	uses: manishsat/ado-download-artifact@v3
+	with:
+	  orgName: GagneetChawla0876
+	  projectId: demo_tfe
