@@ -21,13 +21,13 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: jobandeep
-          password: nanakji@486
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
           subject: Github Actions job result
           # Literal body:
           body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
-          to: harbrahm@gmail.com
-          from: jobandeepnov2018@gmail.com
+          to: harbrahm@gmail.com,jobandeepnov2018@gmail.com
+          from: Jobandeep Singh
           # Optional content type:
           content_type: text/html 
