@@ -19,6 +19,6 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/download-artifact@v1
         with:
-            name: my-artifact
+            name: _harbrahm.java-hello-world-with-maven/20200318.1
     
 
