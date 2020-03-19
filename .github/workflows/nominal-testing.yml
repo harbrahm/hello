@@ -19,7 +19,7 @@ jobs:
       - uses: fixpoint/azblob-download-artifact@v3
         with:
           connection-string: DefaultEndpointsProtocol=https;AccountName=brahmleen123;AccountKey=mRWuVVgeUzIHMeiGlFnJ9CFmck/e9KFCQBLRFGde/TqHLMxy7uVO2FkBVIsRI8/lX3KylPMT11exo/GQ0h0L6w==;EndpointSuffix=core.windows.net
-          key:  mRWuVVgeUzIHMeiGlFnJ9CFmck/e9KFCQBLRFGde/TqHLMxy7uVO2FkBVIsRI8/lX3KylPMT11exo/GQ0h0L6w==
+          name:  data
 
     
 
