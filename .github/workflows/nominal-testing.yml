@@ -16,9 +16,9 @@ jobs:
         with:
           name: hello-artifact
           path: hello
-      - uses: actions/checkout@v1
-      - uses: actions/download-artifact@v1
+      - uses: fixpoint/azblob-download-artifact@v3
         with:
-            name: _harbrahm.java-hello-world-with-maven
+          connection-string: DefaultEndpointsProtocol=https;AccountName=brahmleen123;AccountKey=mRWuVVgeUzIHMeiGlFnJ9CFmck/e9KFCQBLRFGde/TqHLMxy7uVO2FkBVIsRI8/lX3KylPMT11exo/GQ0h0L6w==;EndpointSuffix=core.windows.net
+
     
 
