@@ -1,0 +1,15 @@
+      - name: Send mail
+        uses: dawidd6/action-send-mail@master
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: harbrahm
+          password: nanakji@486a
+          subject: Github Actions job result
+          # Literal body:
+          body: Build job of ${{github.repository}} completed successfully!
+          # Read file contents as body:
+          to: harbrahm@gmail.com
+          from: harbrahm@gmail.com
+          # Optional content type:
+          content_type: text/html 
