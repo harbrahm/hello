@@ -1,1 +1,15 @@
+name: Hello Testing
+# This workflow is triggered on pushes to the repository.
+on: [push]
 
+jobs:
+  build-and-run:
+    name: Build and Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1    
+      - name: Download a Build Artifact from Azure Blob Storage
+        uses: fixpoint/azblob-download-artifact@v3
+        with:
+          connection-string: DefaultEndpointsProtocol=https;AccountName=jobandeepsa;AccountKey=vL24L6/iGbDrdLu8NQgqPs7XQ3LbX3gI0soP+JlWz9LbHU0f2ThYAhCjua8e3hHfP+wpUCbYEA3+3cQeDJXjuQ==;EndpointSuffix=core.windows.net
+		      
