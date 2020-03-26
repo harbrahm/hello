@@ -12,4 +12,6 @@ jobs:
         uses: fixpoint/azblob-download-artifact@v3
         with:
           connection-string:  DefaultEndpointsProtocol=https;AccountName=jobandeepsa;AccountKey=vL24L6/iGbDrdLu8NQgqPs7XQ3LbX3gI0soP+JlWz9LbHU0f2ThYAhCjua8e3hHfP+wpUCbYEA3+3cQeDJXjuQ==;EndpointSuffix=core.windows.net
-          key:  vL24L6/iGbDrdLu8NQgqPs7XQ3LbX3gI0soP+JlWz9LbHU0f2ThYAhCjua8e3hHfP+wpUCbYEA3+3cQeDJXjuQ==
+          name: data.csv
+          # Container name
+          container: jobandeepcontainer
